@@ -1,0 +1,16 @@
+rp:
+  endpoint: {{STAFF_REPORT_PORTAL_URL}}
+  uuid: {{STAFF_REPORT_PORTAL_UUID}}
+  launch: {{ENV_SHORT_NAME}}-staff-tests-repository-tests
+  project: example
+  attributes: staff
+
+# STAFF catalog backend configs
+staff:
+  catalog:
+    endpoint: {{STAFF_CATALOG_URL}}
+    token: {{STAFF_CATALOG_API_TOKEN}}
+  browserstack:
+    username: {{BROWSERSTACK_USERNAME}}
+    access-key: {{BROWSERSTACK_ACCESS_KEY}}
+    ca-cert: ''

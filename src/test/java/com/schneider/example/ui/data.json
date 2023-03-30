@@ -1,0 +1,26 @@
+{
+    "searchValues": {
+        "defName": "AcslNtf_UnbillableReasonCodeDef",
+        "applicationCode": "Accessorial Notification",
+        "setName": "AcslNtf_UnbillableReasonCodeSet"
+    },
+    "resetValues": {
+        "applicationCode": "ANALYTICS",
+        "definationName": "test",
+        "countyCode": "Albanian",
+        "setName": "test-set",
+        "varient": "test-varient",
+        "propertyName": "test-property",
+        "languageCode": "Albanian",
+        "countryCode": "Albania"
+    },
+    "setValues": {
+        "newSetName": "test_set",
+        "newApplicationCode": "ANALYTICS",
+        "verifyNewSet": "Manage Configuration Sets"
+    },
+    "savedSearchValues": {
+        "personalize": "Personalize...",
+        "newSearchName": "test_newSearch"
+    }
+}

@@ -1,0 +1,80 @@
+# soa123Url: http://soaunt123.intra.schneider.com:80
+# testDataUrl: https://soa-test-data-service-unt-testing-pilot.apps.ocpunt2.schneider.com/
+# elastic:
+#     host: kibanaunt1.intra.schneider.com
+#     index: soa12c-unt*
+#     port: 443
+#     scheme: https
+#     trustStorePath: C:\\certs\\cacerts
+#     pathPrefix: elasticsearch
+#     trustStorePass: changeit
+
+soa123Url: {{batch.rt.soa.nonsec.url}}
+testDataUrl: {{STAFF_SOA_TEST_DATA_SERVICE_URL}}
+elastic:
+    host: {{KIBANA_URL}}
+    index: {{KIBANA_SOA_INDEX}}
+    port: 443
+    scheme: https
+    trustStorePath: ""
+    trustStorePass: ""
+    pathPrefix: elasticsearch
+
+# baseUrl: http://sbunt1.intra.schneider.com
+# appUsername: SA_JMETERTESTS
+# appUsername: SA_JMETERTESTS
+# appPassword:
+# sn2DB:
+#  username: sni_guest
+#  password:
+#  url: jdbc:oracle:thin:@(DESCRIPTION =(ADDRESS = (PROTOCOL = TCP)(HOST =untcrs9400)(PORT = 1521))(CONNECT_DATA = (SERVICE_NAME = sn2w0_jdbc.world)))
+#  driverClassName: oracle.jdbc.driver.OracleDriver
+
+baseUrl: {{SB1_BASE_URL}}
+appUsername: {{SA_TEST_USERNAME}}
+appPassword: {{SA_TEST_PASSWORD}}
+sn2DB:
+  username: {{DB_sni_USERNAME_sni_guest}}
+  password: {{DB_sni_PASSWORD_sni_guest}}
+  url: {{SNIBLD_RT_DB_sn2_URL1}}
+  driverClassName: oracle.jdbc.driver.OracleDriver
+DELAY_1X: 1000
+DELAY_2X: 2000
+DELAY_3X: 3000
+
+# driver configurations for google-chrome
+chrome:
+  type: chrome
+  showDriverLog: true
+  start: false
+
+# driver configurations for chromedriver
+# for local run provide chromedriver 'executable' path here if it is not present in environment variable
+chromedriver:
+  type: chromedriver
+  showDriverLog: true
+  start: false
+  executable: ''
+
+# driver configurations for browserstack
+browserstack:
+  type: chromedriver
+  showDriverLog: true
+  start: false
+  webDriverUrl: https://{{BROWSERSTACK_USERNAME}}:{{BROWSERSTACK_ACCESS_KEY}}@hub-cloud.browserstack.com/wd/hub
+  webDriverSession:
+    capabilities:
+      browserName: chrome
+    desiredCapabilities:
+      browserName: chrome
+      browser_version: 90.0
+      resolution: 1920x1080
+      browserstack.user: {{BROWSERSTACK_USERNAME}}
+      browserstack.key: {{BROWSERSTACK_ACCESS_KEY}}
+      browserstack.selenium_version: 3.141.59
+      acceptInsecureCerts: true
+      acceptSslCerts: true
+      browserstack.use_w3c: true
+      browserstack.local: true
+      browserstack.localIdentifier: ''
+      browserstack.idleTimeout: 300

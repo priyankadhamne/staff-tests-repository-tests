@@ -1,0 +1,77 @@
+{
+    "search": {
+        "definationName": "//input[@id='pt1:pt_pt1:snicf1:0:qryId1:val10::content']",
+        "btnSearch": "//button[@id='pt1:pt_pt1:snicf1:0:qryId1::search']",
+        "defName": "//label[text()='Definition Name']",
+        "applicationCode": "//select[@id='pt1:pt_pt1:snicf1:0:qryId1:val00::content']",
+        "btnSearch1": "//button[@id='pt1:pt_pt1:snicf1:0:qryId1::search1']",
+        "setName": "//input[@id='pt1:pt_pt1:snicf1:0:qryId1:val20::content']",
+        "definationColumn": "//td[@id='pt1:pt_pt1:snicf1:0:resPCol:resTbl:6:eofc1']",
+        "appCodeColumn": "//span[@id='pt1:pt_pt1:snicf1:0:resPCol:resTbl:0:soc6::content']",
+        "setNameColumn": "//td[@id='pt1:pt_pt1:snicf1:0:resPCol:resTbl:6:eofc2']",
+        "defaultColumn": "//span[@id='pt1:pt_pt1:snicf1:0:resPCol:resTbl:1:c3']"
+    },
+    "saveSearch": {
+        "btnSave": "//button[@id='pt1:pt_pt1:snicf1:0:qryId1::save']",
+        "searchName": "input[id='pt1:pt_pt1:snicf1:0:qryId1::SS_name::content']",
+        "setAsDefault": "//*[@id='pt1:pt_pt1:snicf1:0:qryId1::SS_def::content']",
+        "RunAsDefault": "//*[@id='pt1:pt_pt1:snicf1:0:qryId1::SS_autoEx::content']",
+        "btnOk": "//button[@id='pt1:pt_pt1:snicf1:0:qryId1::SSD::ok']",
+        "saveSearchDropDown": "//select[@id='pt1:pt_pt1:snicf1:0:qryId1::saveSrch::content']",
+        "savedSearchDropDown": "//select[@id='pt1:pt_pt1:snicf1:0:qryId1::PSS_Srchs::content']",
+        "appCodeColumn": "//*[@id='pt1:pt_pt1:snicf1:0:resPCol:resTbl:0:soc6::content']"
+    },
+    "warningDialog": {
+        "warningMsg": "//span[@id='pt1:pt_pt1:snicf1:0:qryId1::DWDMsg']",
+        "btnYes": "//button[@id='pt1:pt_pt1:snicf1:0:qryId1::DWD::yes']"
+    },
+    "savedSearch": {
+        "saveSearch": "//select[@id='pt1:pt_pt1:snicf1:0:qryId1::PSS_Srchs::content']",
+        "btnDelete": "//button[@id='pt1:pt_pt1:snicf1:0:qryId1::delete']",
+        "btnApply": "//button[@id='pt1:pt_pt1:snicf1:0:qryId1::apply']",
+        "btnOk": "//button[@id='pt1:pt_pt1:snicf1:0:qryId1::PSSD::ok']"
+    },
+    "page": {
+        "profileTab": "//*[@id='pt1:pt_pt1:pt_np1::tabh']"
+    },
+    "navigate": {
+        "tpProfile": "//*[@id='pt1:pt_pt1:pt_np1:pt_cni1::disclosureAnchor']",
+        "translation": "{a}BCS Translation"
+    },
+    "defination": {
+        "btnCreateDef": "//button[@id='pt1:pt_pt1:snicf1:0:resPCol:createDefCommandButton']",
+        "newDefName": "//input[@id='pt1:pt_pt1:snicf1:0:resPCol:eofit1::content']",
+        "btnOk": "//button[@id='pt1:pt_pt1:snicf1:0:resPCol:eofcb3']"
+    },
+    "detachValidation": {
+        "btnDeatch": "//*[@id='pt1:pt_pt1:snicf1:0:resPCol:_dchTbr']/a/span",
+        "detachClose": "a[id='pt1:pt_pt1:snicf1:0:resPCol::_afrDetachDialogId::close']",
+        "detac1": "//td[@id='pt1:pt_pt1:snicf1:0:resPCol::_afrDetachDialogId::_hce']"
+    },
+    "export": {
+        "mangeConfText": "//*[@id='pt1:pt_pt1:snicf1:2:ebtcb1']"
+    },
+    "set": {
+        "manageSet": "//button[@id='pt1:pt_pt1:snicf1:0:resPCol:eofcb1']",
+        "importCsv": "//button[text()='Import CSV']",
+        "managesetChooseFile": "//input[@type='file']",
+        "btnManagesetImportOk": "//button[text()='OK']",
+        "exportToCsv": "//button[@id='pt1:pt_pt1:snicf1:1:snicn1:0:mngStPC:cb1']",
+        "exportToExcel": "//button[@id='pt1:pt_pt1:snicf1:1:snicn1:0:mngStPC:cb3']",
+        "createSet": "//button[@id='pt1:pt_pt1:snicf1:0:resPCol:createSetCommandButton']",
+        "newSetName": "//input[@id='pt1:pt_pt1:snicf1:0:resPCol:eofit1::content']",
+        "newSetAppCode": "//select[@id='pt1:pt_pt1:snicf1:0:resPCol:soc4::content']",
+        "btnOk": "//button[@id='pt1:pt_pt1:snicf1:0:resPCol:eofcb3']",
+        "verifyNewSet": "//td[@id='pt1:pt_pt1:snicf1:1:snicn1:0:hctph1::_afrTtxt']"
+    },
+    "reset": {
+        "applicationCode": "//select[@id='pt1:pt_pt1:snicf1:0:qryId1:val00::content']",
+        "definationName": "//input[@id='pt1:pt_pt1:snicf1:0:qryId1:val10::content']",
+        "languageCode": "//select[@id='pt1:pt_pt1:snicf1:0:qryId1:val40::content']",
+        "countyCode": "//select[@id='pt1:pt_pt1:snicf1:0:qryId1:val50::content']",
+        "setName": "//input[@id='pt1:pt_pt1:snicf1:0:qryId1:val20::content']",
+        "varient": "//input[@id='pt1:pt_pt1:snicf1:0:qryId1:val60::content']",
+        "propertyName": "//input[@id='pt1:pt_pt1:snicf1:0:qryId1:val30::content']",
+        "btnReset": "//button[@id='pt1:pt_pt1:snicf1:0:qryId1::reset']"
+    }
+}

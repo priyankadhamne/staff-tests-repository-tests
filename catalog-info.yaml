@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: staff-tests-repository-tests
+  description: karate-tests-repo
+  tags:
+    - karate-tests
+  labels:
+    templateVersion: karate-tests-cookiecutter-v1
+    hostedOn: aksspoke
+  links:
+    - url: https://github.com/priyankadhamne/staff-tests-repository-tests
+      title: GitHub Repo
+  annotations:
+    git.schneider.com/project-slug: priyankadhamne/staff-tests-repository-tests
+    backstage.io/techdocs-ref: dir:.
+    sonarqube.org/project-key: staff-tests-repository-tests
+    backstage.io/kubernetes-label-selector: name=staff-tests-repository-tests
+spec:
+  type: karate
+  lifecycle: experimental
+  owner: boxoffice
+  system: staff-test

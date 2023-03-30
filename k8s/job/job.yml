@@ -1,0 +1,21 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: staff-tests-repository-tests-{{IMAGE_VERSION}}
+spec:
+# ttlSecondsAfterFinished: 100
+  template:
+    spec:
+      containers:
+      - image: sonatypenexus.schneider.com:19443/{{ENV_SHORT_NAME}}/example-service-tests:{{IMAGE_VERSION}}
+        name: example-service-tests-job-{{IMAGE_VERSION}}
+        resources: {}
+        imagePullPolicy: IfNotPresent
+        envFrom:
+        - configMapRef:
+            name: example-service-tests-job
+        - secretRef:
+            name: example-service-tests-job
+        command: ["sh","/opt/app/staff-test-launcher.sh"]
+      restartPolicy: Never
+  backoffLimit: 0
